@@ -74,6 +74,8 @@ Router.map(function() {
       this.route('loading');
     });
   });
+
+  this.route('test');
 });
 
 export default Router;
