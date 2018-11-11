@@ -40,7 +40,9 @@ App.MainMenuView = Em.CollectionView.extend({
               {label: Em.I18n.t('menu.item.dashboard'), routing: 'dashboard', active: 'active'},
               {label: Em.I18n.t('menu.item.services'), routing: 'services'},
               {label: Em.I18n.t('menu.item.hosts'), routing: 'hosts'},
-              {label: Em.I18n.t('menu.item.alerts'), routing: 'alerts'}
+              {label: Em.I18n.t('menu.item.alerts'), routing: 'alerts'},
+              {label: Em.I18n.t('menu.item.test'), routing: 'test'}
+
           );
         }
         if (App.isAuthorized('CLUSTER.TOGGLE_KERBEROS, CLUSTER.MODIFY_CONFIGS, SERVICE.START_STOP, SERVICE.SET_SERVICE_USERS_GROUPS, CLUSTER.UPGRADE_DOWNGRADE_STACK, CLUSTER.VIEW_STACK_DETAILS')
