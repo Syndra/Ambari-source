@@ -25,7 +25,7 @@ export default Ember.Route.extend({
       let id = this.get('worksheetCount');
       this.get('controller').set('worksheetCount',parseInt(id)+1);
       this.set('worksheetCount',parseInt(id)+1);
-      this.transitionTo('queries.new');
+      this.transitionTo('test.new');
     }
   }  
 });
