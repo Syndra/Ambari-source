@@ -18,22 +18,17 @@
 
 <h1> Test Route </h1>
 
-<div class="worksheet-container">
-  <ul class="worksheet-nav row nav nav-tabs inverse">
-    {{#each worksheets as |worksheet index| }}
-      <li class="{{if worksheet.selected 'active'}}" style="" {{action "openWorksheetRenameModal" wf.title on="doubleClick"}}>
-        {{#link-to 'test.query' worksheet.id  classBinding='worksheet.selected:active' }}{{ worksheet.title }}
-          {{#if worksheet.isQueryDirty}}*{{/if}}
-          {{#if (gt worksheets.length 1)}}
-            <span class="closeTab" {{action "confirmWorksheetClose" index worksheet.id bubbles=false }}>{{fa-icon "times"}}</span>
-          {{/if}}
-        {{/link-to}}
-      </li>
-    {{/each}}
-    <li>
-      <button class="btn btn-default new-worksheet" title="New Worksheet" {{action "createNewWorksheet" }}>{{fa-icon "plus"}}</button>
-    </li>
-  </ul>
+<div class="col-md-12 table-info">
+  <div class="row table-body">
+    {{#setting-list settings=model newSettings="addNewSettings" as |setting|}}
+      {{#unless setting.editMode}}
+        {{setting-item setting=setting editAction="editAction" deleteAction="deleteAction"}}
+      {{else}}
+        {{edit-setting-item setting=setting
+                            hiveParameters=hiveParameters
+                            updateAction="updateAction"
+                            cancelAction="cancelAction"}}
+      {{/unless}}
+    {{/setting-list}}
+  </div>
 </div>
-
-{{outlet}}
