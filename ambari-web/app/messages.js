@@ -3168,7 +3168,7 @@ Em.I18n.translations = {
   'menu.item.hosts':'Hosts',
   'menu.item.admin':'Admin',
   'menu.item.alerts': 'Alerts',
-  'menu.item.Test': 'Test',
+  'menu.item.test': 'Test',
   'menu.item.views':'<i class="icon-th"></i>',
   'menu.item.views.noViews':'No Views',
 

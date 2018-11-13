@@ -75,7 +75,16 @@ Router.map(function() {
     });
   });
 
-  this.route('test');
+  this.route('test', function() {
+    this.route('new');
+    this.route('query', {path: '/:worksheetId'}, function() {
+      this.route('results');
+      this.route('log');
+      this.route('visual-explain');
+      this.route('tez-ui');
+      this.route('loading');
+    });
+  });
 });
 
 export default Router;
