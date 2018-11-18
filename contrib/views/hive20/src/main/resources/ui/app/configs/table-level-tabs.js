@@ -66,6 +66,12 @@ let tableLevelTabs = [
     label: 'AUTHORIZATION',
     link: 'databases.database.tables.table.auth',
     faIcon: 'users'
+  }),
+  Ember.Object.create({
+    name: 'authorization12345',
+    label: 'AUTHORIZATION',
+    link: 'databases.database.tables.table.auth',
+    faIcon: 'users'
   })
 ];
 
