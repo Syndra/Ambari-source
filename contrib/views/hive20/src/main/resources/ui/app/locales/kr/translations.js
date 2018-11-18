@@ -25,11 +25,19 @@ export default {
         'uploadFile':"업로드할 파일을 끌어오거나 이곳을 클릭하세요",
         'preview':"미리보기",
         'create':"생성",
-        'cancel':'닫기',
+        'edit':"수정",
+        'cancel':"닫기",
+        'rename':"이름 변경",
         'tablePreview':"테이블 미리보기",
         'tableName':'테이블명',
-        'nameEmpty':'테이블명은 비어있을 수 없습니다'
-
+        'nameEmpty':'테이블명은 비어있을 수 없습니다',
+        'saveUDF':"UDF 저장",
+        'columnName':"열 이름",
+        'dataType':"자료형",
+        'size':"크기",
+        'advanced':"향상된 기능",
+        'action':"액션",
+        'addNewCol':"새로운 열 추가하기"
       },
       "fileSource": {
         
