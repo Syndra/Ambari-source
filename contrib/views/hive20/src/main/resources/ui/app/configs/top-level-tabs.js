@@ -62,6 +62,12 @@ let topLevelTabs = [
     faIcon: 'paper-plane'
   }),
   Ember.Object.create({
+    name: 'env-settings',
+    label: 'ENV-SETTINGS',
+    link: 'envsettings',
+    faIcon: 'cog'
+  }),
+  Ember.Object.create({
     name: 'notifications',
     label: 'NOTIFICATIONS',
     link: 'messages',
