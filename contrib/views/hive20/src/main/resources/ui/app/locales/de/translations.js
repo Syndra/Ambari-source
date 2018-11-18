@@ -33,7 +33,7 @@ export default {
         'columnDelimiterTooltip': "Delimiter for the column values. Default is comman (,).",
         'escapeCharacterField': "Escape Character",
         'escapeCharacterTooltip': "Escape character. Default is backslash (\).",
-        'quoteCharacterTooltip': "Quote character. Default is double quote (").",
+        'quoteCharacterTooltip': 'Quote character. Default is double quote (").',
         'quoteCharacterField': "Quote Character",
         'isFirstRowHeader': "Is first row header?",
         'fieldsTerminatedByTooltip': "Fields Terminated By character for Hive table.",

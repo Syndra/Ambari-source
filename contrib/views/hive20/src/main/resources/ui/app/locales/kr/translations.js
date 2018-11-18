@@ -33,7 +33,7 @@ export default {
         'columnDelimiterTooltip': "열 값의 구분 기호로 기본값은 컴마 (,)입니다.",
         'escapeCharacterField': "이스케이프 문자",
         'escapeCharacterTooltip': "이스케이프 문자의 기본값은 백 슬래시 (\)입니다.",
-        'quoteCharacterTooltip': "인용 문자의 기본값은 큰 따옴표 (")입니다.",
+        'quoteCharacterTooltip': '인용 문자의 기본값은 큰 따옴표 (")입니다.',
         'quoteCharacterField': "인용 문자",
         'isFirstRowHeader': "1행이 헤더입니까?",
         'fieldsTerminatedByTooltip': "HIVE 테이블의 문자로 종료된 필드",
