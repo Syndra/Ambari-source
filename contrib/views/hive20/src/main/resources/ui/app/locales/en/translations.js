@@ -58,6 +58,13 @@ export default {
         'newTable':"NEW TABLE",
         'tableLoading':"Loading Tables. Please wait.",
         'tableInfoLoading':"Loading Table Information. Please wait.",
+        'dbLoading':"Loading Databases. Please wait.",
+        'jobLoading':"Loading Jobs. Please wait.",
+        'dataLoading':"Data Loading... Please wait.",
+        'savedQueryLoading':"Loading Saved Queries. Please wait.",
+        'settingLoading':"Loading Settings. Please wait.",
+        'udfLoading':"Loading Udfs. Please wait.",
+        'loadAuthInfoRanger':"Loading authorization information from Ranger",
         'columnType':"COLUMN TYPE",
         'comment':"COMMENT",
         'clustered':"CLUSTERED",
@@ -73,7 +80,8 @@ export default {
         'tableNotComputed':"Table statistics are not computed",
         'colStat':"COLUMNS STATISTICS",
         'statistics':"STATISTICS",
-        'analyseLongTime':"Analyse table statistics operation may take long time"
+        'analyseLongTime':"Analyse table statistics operation may take long time",
+
       },
       "fileSource": {
         'uploadFromLocal': "Upload from Local",
