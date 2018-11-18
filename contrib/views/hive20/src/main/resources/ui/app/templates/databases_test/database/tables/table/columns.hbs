@@ -16,11 +16,29 @@
 * limitations under the License.
 }}
 
-<h1> Test Route </h1>
-
-{{jobs-browser-test jobs=model
-               startTime=startTimeText
-               endTime=endTimeText
-               filterChanged="dateFilterChanged"
-               openWorksheet="openWorksheet"
-}}
+<div class="row">
+  <table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+      <th width="30%">COLUMN NAME</th>
+      <th width="20%">COLUMN TYPE</th>
+      <th width="40%">COMMENT</th>
+      <th width="10%">CLUSTERED</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each table.columns as |column|}}
+      <tr>
+        <th>{{column.name}}</th>
+        <td>{{column.type}} {{format-column-size column.precision column.scale}}</td>
+        <td>{{column.comment}}</td>
+        <td class="text-center">
+          {{#if column.isClustered}}
+            <span class="text-primary">{{fa-icon "check"}}</span>
+          {{/if}}
+        </td>
+      </tr>
+    {{/each}}
+    </tbody>
+  </table>
+</div>

@@ -16,11 +16,25 @@
 * limitations under the License.
 }}
 
-<h1> Test Route </h1>
-
-{{jobs-browser-test jobs=model
-               startTime=startTimeText
-               endTime=endTimeText
-               filterChanged="dateFilterChanged"
-               openWorksheet="openWorksheet"
-}}
+<div class="row">
+  <table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+      <th>INFORMATION</th>
+      <th>VALUE</th>
+    </tr>
+    </thead>
+    {{#with table.viewInfo as |info|}}
+      <tbody>
+        <tr>
+          <th>Original Text</th>
+          <td>{{info.originalText}}</td>
+        </tr>
+        <tr>
+          <th>Extended Text</th>
+          <td>{{info.extendedText}}</td>
+        </tr>
+      </tbody>
+    {{/with}}
+  </table>
+</div>

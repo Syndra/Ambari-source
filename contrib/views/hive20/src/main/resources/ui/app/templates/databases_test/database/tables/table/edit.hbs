@@ -16,11 +16,30 @@
 * limitations under the License.
 }}
 
-<h1> Test Route </h1>
+<div class="row">
+  <div class="alert alert-info">
+    <p class="lead">{{fa-icon "pencil-square-o" size=1}} Edit table <strong class="text-uppercase">{{table.table}}</strong></p>
+  </div>
+</div>
 
-{{jobs-browser-test jobs=model
-               startTime=startTimeText
-               endTime=endTimeText
-               filterChanged="dateFilterChanged"
-               openWorksheet="openWorksheet"
-}}
+<div class="row">
+  {{edit-table   tabs=tabs
+                 table=table
+                 cancel="cancel"
+                 edit="edit"}}
+</div>
+
+{{#if showModal}}
+  {{#modal-dialog
+    translucentOverlay=true
+    container-class="modal-dialog modal-sm"}}
+    <div class="modal-content">
+      <div class="modal-header text-danger">
+        <p class="modal-title">{{fa-icon "plus"}}&nbsp;&nbsp;&nbsp; Edit Table</p>
+      </div>
+      <div class="modal-body text-center text-primary">
+        <p>{{modalMessage}}</p>
+      </div>
+    </div><!-- /.modal-content -->
+  {{/modal-dialog}}
+{{/if}}

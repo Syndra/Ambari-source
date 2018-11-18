@@ -16,11 +16,8 @@
 * limitations under the License.
 }}
 
-<h1> Test Route </h1>
-
-{{jobs-browser-test jobs=model
-               startTime=startTimeText
-               endTime=endTimeText
-               filterChanged="dateFilterChanged"
-               openWorksheet="openWorksheet"
-}}
+<div class="col-md-12 text-center loader">
+  {{fa-icon "spinner" spin=true size=3}}
+  <br>
+  <h3>Loading authorization information from Ranger</h3>
+</div>

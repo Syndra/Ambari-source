@@ -16,11 +16,20 @@
 * limitations under the License.
 }}
 
-<h1> Test Route </h1>
-
-{{jobs-browser-test jobs=model
-               startTime=startTimeText
-               endTime=endTimeText
-               filterChanged="dateFilterChanged"
-               openWorksheet="openWorksheet"
-}}
+<div class="row">
+  <div class="authorizations alert alert-info">
+    <p class="lead">{{fa-icon "shield" size=1}} Ranger policies</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 alert alert-danger">
+    <p><strong>Message:</strong> {{model.errors.message}}</p>
+    <p><strong>Error Code:</strong> {{model.errors.errorCode}}</p>
+    {{#if model.errors.trace}}
+      <p><strong>Trace:</strong></p>
+      <pre class="prettyprint">
+        {{model.errors.trace}}
+      </pre>
+    {{/if}}
+  </div>
+</div>

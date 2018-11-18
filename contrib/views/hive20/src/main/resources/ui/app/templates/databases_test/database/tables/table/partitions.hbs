@@ -16,11 +16,23 @@
 * limitations under the License.
 }}
 
-<h1> Test Route </h1>
-
-{{jobs-browser-test jobs=model
-               startTime=startTimeText
-               endTime=endTimeText
-               filterChanged="dateFilterChanged"
-               openWorksheet="openWorksheet"
-}}
+<div class="row">
+  <table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+      <th>COLUMN NAME</th>
+      <th>COLUMN TYPE</th>
+      <th>COMMENT</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each model.partitionInfo.columns as |column|}}
+      <tr>
+        <th>{{column.name}}</th>
+        <td>{{column.type}} {{format-column-size column.precision column.scale}}</td>
+        <td>{{column.comment}}</td>
+      </tr>
+    {{/each}}
+    </tbody>
+  </table>
+</div>

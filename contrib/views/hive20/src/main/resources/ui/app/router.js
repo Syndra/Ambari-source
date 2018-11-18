@@ -60,6 +60,30 @@ Router.map(function() {
       });
     });
   });
+
+  this.route('databases_test', function() {
+    this.route('newtable');
+    this.route('database', {path: '/:databaseId'}, function() {
+      this.route('tables', {path: '/tables'}, function() {
+        this.route('new-database');
+        this.route('new');
+        this.route('upload-table');
+        this.route('table', {path: '/:name'}, function() {
+          this.route('edit');
+          this.route('rename');
+          this.route('columns');
+          this.route('partitions');
+          this.route('storage');
+          this.route('details');
+          this.route('view');
+          this.route('ddl');
+          this.route('stats');
+          this.route('auth');
+        });
+      });
+    });
+  });
+
   this.route('messages', function() {
     this.route('message', {path: '/:message_id'});
   });
