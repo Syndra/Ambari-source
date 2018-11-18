@@ -21,9 +21,9 @@
 <div class="setting-wrapper">
     <h4>Language</h4>
     <hr />
-    <select style="width: 200px">
-    	{{#each languages as |language|}}
-    		<option>{{language}}</option>
-    	{{/each}}
-    </select>
+    <select onchange={{action "selectLanguage" value="target.value"}}>
+		{{#each languages as |languageChoice|}}
+			<option value={{languageChoice}} selected={{eq language languageChoice}}>{{languageChoice}}</option>
+		{{/each}}
+	</select>
 </div>
