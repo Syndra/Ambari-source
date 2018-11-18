@@ -76,7 +76,7 @@ Router.map(function() {
   });
 
   this.route('test');
-  this.route('evn-settings');
+  this.route('envsettings');
 });
 
 export default Router;
