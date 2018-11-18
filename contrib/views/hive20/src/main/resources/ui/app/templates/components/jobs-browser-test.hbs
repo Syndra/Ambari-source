@@ -15,7 +15,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 }}
-
+<h1> Test job browers </h1>
 <div class="row jobs-status">
   <div class="col-md-12 ">
     <div class="col-md-7">
@@ -94,7 +94,7 @@
       </thead>
       <tbody>
         {{#each filteredJobsSorted as |job| }}
-          {{job-item model=jobs job=job openWorksheet="openWorksheet"}}
+          {{job-item-test model=jobs job=job openWorksheet="openWorksheet"}}
         {{/each}}
       </tbody>
     </table>
