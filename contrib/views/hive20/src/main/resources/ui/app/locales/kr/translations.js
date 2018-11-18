@@ -79,7 +79,7 @@ export default {
         'tableNotComputed':"테이블 통계가 계산되지 않습니다",
         'colStat':"열 통계",
         'statistics':"통계",
-        'analyseLongTime':"테이블 통계 작업 분석에는 시간이 오래 걸릴 수 있습니다."
+        'analyseLongTime':"테이블 통계 작업 분석에는 시간이 오래 걸릴 수 있습니다.",
         'execute':"실행",
         'stopping':"중지 중",
         'stop':"멈춤",
