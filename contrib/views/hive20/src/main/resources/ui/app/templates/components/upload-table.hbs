@@ -24,10 +24,10 @@
   {{upload-table-source onFileChanged='onFileChanged' fileInfo=fileInfo}}
 </div>
 
-
+{{t 'hive.ui.fileSource.fileType'}}
 <div class="create-table-controls">
   <button class="btn btn-success" {{action
-  "preview"}}>{{fa-icon "eye"}} Preview</button>
+  "preview"}}>{{fa-icon "eye"}} {{t 'hive.ui.customizeText.preview'}}</button>
 </div>
 
 <div class="table-body">
@@ -38,7 +38,7 @@
         "toggleShowPreview"}}>
         {{fa-icon (if showPreview "minus" "plus")}}
         </button>
-        &nbsp;&nbsp;&nbsp;Table Preview
+        &nbsp;&nbsp;&nbsp;{{t 'hive.ui.customizeText.selectFileSource'}}
       </div>
     </div>
   <div class="query-result">

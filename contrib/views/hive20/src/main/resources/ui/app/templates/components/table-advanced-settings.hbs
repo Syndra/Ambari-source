@@ -20,13 +20,13 @@
   <div class="panel-heading">
     <div class="panel-title">
       {{fa-icon "cog" size="lg"}}
-      &nbsp;&nbsp;&nbsp;Settings
+      &nbsp;&nbsp;&nbsp;{{t 'hive.ui.customizeText.settings'}}
     </div>
   </div>
   <div class="panel-body">
     <div class="form-horizontal">
       <div class="form-group">
-        <label class="col-md-2 control-label">Transactional</label>
+        <label class="col-md-2 control-label">{{t 'hive.ui.customizeText.transactional'}}</label>
         <div class="col-md-4">
           <label>
             {{input type="checkbox" checked=settings.transactional  disabled=disableTransactionInput}}
@@ -36,7 +36,7 @@
 
       {{#if shouldAddBuckets}}
         <div class="form-group">
-          <label class="col-md-2 control-label">Number of buckets</label>
+          <label class="col-md-2 control-label">{{t 'hive.ui.customizeText.numOfBuckets'}}</label>
           <div class="col-md-6">
             <div class="{{if hasNumBucketError 'has-error'}}">
               {{input type="number" min="0" class="form-control" value=settings.numBuckets disabled=disableNumBucketsInput}}
@@ -59,7 +59,7 @@
         <button class="btn btn-primary {{if showLocationInput 'active'}}" {{action "toggleLocation"}}>
           {{fa-icon (if showLocationInput "minus" "plus")}}
         </button>
-        &nbsp;&nbsp;&nbsp;Add Location
+        &nbsp;&nbsp;&nbsp;{{t 'hive.ui.customizeText.addLocation'}}
       </div>
     </div>
     {{#if showLocationInput}}
@@ -79,7 +79,7 @@
         <button class="btn btn-primary {{if showFileFormatInput 'active'}}" {{action "toggleFileFormat"}}>
           {{fa-icon (if showFileFormatInput "minus" "plus")}}
         </button>
-        &nbsp;&nbsp;&nbsp;Add File Format
+        &nbsp;&nbsp;&nbsp;{{t 'hive.ui.customizeText.addFileFormat'}}
       </div>
     </div>
     {{#if showFileFormatInput}}
@@ -100,14 +100,14 @@
           <div class="row fileformat-custom-row">
             <div class="col-md-6 form-horizontal">
               <div class="form-group">
-                <label class="col-md-3 control-label">Input Format</label>
+                <label class="col-md-3 control-label">{{t 'hive.ui.customizeText.inputFormat'}}</label>
                 <div class="col-md-9">
                   {{input type="text" class="form-control" value=settings.fileFormat.inputFormat
                           placeholder="Input format class"}}
                 </div>
               </div>
               <div class="form-group">
-                <label class="col-md-3 control-label">Output Format</label>
+                <label class="col-md-3 control-label">{{t 'hive.ui.customizeText.outputFormat'}}</label>
                 <div class="col-md-9">
                   {{input type="text" class="form-control" value=settings.fileFormat.outputFormat
                           placeholder="Output format class"}}
@@ -127,7 +127,7 @@
         <button class="btn btn-primary {{if showRowFormatInput 'active'}}" {{action "toggleRowFormat"}}>
           {{fa-icon (if showRowFormatInput "minus" "plus")}}
         </button>
-        &nbsp;&nbsp;&nbsp;Add Row Format
+        &nbsp;&nbsp;&nbsp;{{t 'hive.ui.customizeText.addRowFormat'}}
       </div>
     </div>
     {{#if showRowFormatInput}}
@@ -135,7 +135,7 @@
         <div class="row">
           <div class="col-md-6 form-horizontal">
             <div class="form-group">
-              <label class="col-md-4 control-label">Fields Terminated By</label>
+              <label class="col-md-4 control-label">{{t 'hive.ui.customizeText.fieldTerminate'}}</label>
               <div class="col-md-7">
                 {{#power-select
                   selected=selectedFieldTerminator
@@ -155,7 +155,7 @@
         <div class="row">
           <div class="col-md-6 form-horizontal">
             <div class="form-group">
-              <label class="col-md-4 control-label">Lines Terminated By</label>
+              <label class="col-md-4 control-label">{{t 'hive.ui.customizeText.lineTerminate'}}</label>
               <div class="col-md-7">
                 {{#power-select
                   selected=selectedLinesTerminator
@@ -175,7 +175,7 @@
         <div class="row">
           <div class="col-md-6 form-horizontal">
             <div class="form-group">
-              <label class="col-md-4 control-label">Null Defined As</label>
+              <label class="col-md-4 control-label">{{t 'hive.ui.customizeText.nullDefine'}}</label>
               <div class="col-md-7">
                 {{#power-select
                   selected=selectedNullDefinition
@@ -195,7 +195,7 @@
         <div class="row">
           <div class="col-md-6 form-horizontal">
             <div class="form-group">
-              <label class="col-md-4 control-label">Escape Defined As</label>
+              <label class="col-md-4 control-label">{{t 'hive.ui.customizeText.escapeDefine'}}</label>
               <div class="col-md-7">
                 {{#power-select
                   selected=selectedEscapeDefinition

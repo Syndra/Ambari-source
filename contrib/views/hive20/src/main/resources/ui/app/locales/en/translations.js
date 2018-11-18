@@ -19,6 +19,27 @@
 export default {
   "hive": {
     "ui": {
+      "customizeText":{
+        'selectFileFormat':"Select File Format",
+        'selectFileSource': "Select File Source",
+        'uploadFile':"Drag file to upload or click to browse",
+        'preview':"Preview",
+        'create':"Create",
+        'edit':"Edit",
+        'cancel':"Cancel",
+        'rename':"Rename",
+        'tablePreview':"Table Preview",
+        'tableName':'name',
+        'nameEmpty':'Name cannot be empty',
+        'addUDF':"Add UDF",
+        'saveUDF':"Save UDF",
+        'columnName':"COLUMN NAME",
+        'dataType':"DATA TYPE",
+        'size':"SIZE",
+        'advanced':"ADVANCED",
+        'action':"ACTION",
+        'addNewCol':"Add New Column"
+      },
       "fileSource": {
         'uploadFromLocal': "Upload from Local",
         'uploadFromHdfs': "Upload from HDFS",

@@ -19,11 +19,11 @@
 <div class="row">
   <div class="col-md-12 form-horizontal table-name-input">
     <div class="form-group {{if hasTableNameError 'has-error'}}">
-      <label class="col-md-1 control-label">Name</label>
+      <label class="col-md-1 control-label">{{t 'hive.ui.customizeText.tableName'}}</label>
       <div class="col-md-11">
         {{input type="text" class="form-control" placeholder="Table name" value=tableName}}
         {{#if hasTableNameError}}
-          <span class="help-block">Name cannot be empty</span>
+          <span class="help-block">{{t 'hive.ui.customizeText.nameEmpty'}}</span>
         {{/if}}
       </div>
     </div>
@@ -58,6 +58,6 @@
 
 </div>
 <div class="create-table-controls">
-  <button class="btn btn-success" {{action "create"}}>{{fa-icon "plus"}} Create</button>
-  <button class="btn btn-warning" {{action "cancel"}}>{{fa-icon "times"}} Cancel</button>
+  <button class="btn btn-success" {{action "create"}}>{{fa-icon "plus"}} {{t 'hive.ui.customizeText.create'}}</button>
+  <button class="btn btn-warning" {{action "cancel"}}>{{fa-icon "times"}} {{t 'hive.ui.customizeText.cancel'}}</button>
 </div>

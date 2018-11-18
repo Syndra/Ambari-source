@@ -19,11 +19,11 @@
 <table class="table table-bordered table-hover">
   <thead>
   <tr>
-    <th width="30%">COLUMN NAME</th>
-    <th width="25%">DATA TYPE</th>
-    <th width="25%">SIZE</th>
-    <th width="5%" class="text-center">ADVANCED</th>
-    <th width="15%" class="text-center">ACTION</th>
+    <th width="30%">{{t 'hive.ui.customizeText.columnName'}}</th>
+    <th width="20%">{{t 'hive.ui.customizeText.dataType'}}</th>
+    <th width="15%">{{t 'hive.ui.customizeText.size'}}</th>
+    <th width="20%" class="text-center">{{t 'hive.ui.customizeText.advanced'}}</th>
+    <th width="15%" class="text-center">{{t 'hive.ui.customizeText.action'}}</th>
   </tr>
   </thead>
   <tbody>
@@ -37,7 +37,7 @@
   {{/each}}
   <tr class="new-settings text-center">
     <td colspan="5">
-      <a {{action "addNewColumn"}}>{{fa-icon "plus"}} Add New Column</a>
+      <a {{action "addNewColumn"}}>{{fa-icon "plus"}} {{t 'hive.ui.customizeText.addNewCol'}}</a>
     </td>
   </tr>
   </tbody>
