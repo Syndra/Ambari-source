@@ -16,17 +16,20 @@
 * limitations under the License.
 }}
 
-<tr>
-  <td>{{job.id}}</td>
-  <td class="break-word workflow-name"><a {{action "openAsWorksheet" job}}>{{job.title}}</a></td>
-  <td>{{job.status}}</td>
-  <td>{{moment-from-now job.dateSubmitted}}</td>
-  <td>{{job.duration}}</td>
-  <td><a {{action "toggleExpandJob" job.id}}>{{fa-icon "expand"}}</a></td>
-</tr>
-
-{{#if expanded}}
-  <tr>
-    <td colspan="6">{{queryFile.fileContent}}</td>
-  </tr>
-{{/if}}
+<div class="row">
+  <div class="authorizations alert alert-info">
+    <p class="lead">{{fa-icon "shield" size=1}} Ranger policies</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 alert alert-danger">
+    <p><strong>Message:</strong> {{model.errors.message}}</p>
+    <p><strong>Error Code:</strong> {{model.errors.errorCode}}</p>
+    {{#if model.errors.trace}}
+      <p><strong>Trace:</strong></p>
+      <pre class="prettyprint">
+        {{model.errors.trace}}
+      </pre>
+    {{/if}}
+  </div>
+</div>

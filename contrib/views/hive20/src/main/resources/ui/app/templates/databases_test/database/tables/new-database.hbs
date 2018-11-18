@@ -16,17 +16,32 @@
 * limitations under the License.
 }}
 
-<tr>
-  <td>{{job.id}}</td>
-  <td class="break-word workflow-name"><a {{action "openAsWorksheet" job}}>{{job.title}}</a></td>
-  <td>{{job.status}}</td>
-  <td>{{moment-from-now job.dateSubmitted}}</td>
-  <td>{{job.duration}}</td>
-  <td><a {{action "toggleExpandJob" job.id}}>{{fa-icon "expand"}}</a></td>
-</tr>
+<div class="row">
+  <div class="col-md-12">
+    <div class="alert alert-info">
+      <p class="lead">{{fa-icon "plus" size=1}} Create Database</p>
+    </div>
+  </div>
 
-{{#if expanded}}
-  <tr>
-    <td colspan="6">{{queryFile.fileContent}}</td>
-  </tr>
+</div>
+
+<div class="row stats-section">
+  <div class="col-md-6">
+    {{create-database-form create="create" cancel="cancel"}}
+  </div>
+</div>
+
+{{#if showModal}}
+  {{#modal-dialog
+    translucentOverlay=true
+    container-class="modal-dialog modal-sm"}}
+    <div class="modal-content">
+      <div class="modal-header text-danger">
+        <p class="modal-title">{{fa-icon "plus"}}&nbsp;&nbsp;&nbsp; Create Database</p>
+      </div>
+      <div class="modal-body text-center text-primary">
+        <p>{{modalMessage}}</p>
+      </div>
+    </div><!-- /.modal-content -->
+  {{/modal-dialog}}
 {{/if}}

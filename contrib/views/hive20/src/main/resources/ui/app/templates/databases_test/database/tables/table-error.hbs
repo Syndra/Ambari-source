@@ -16,17 +16,4 @@
 * limitations under the License.
 }}
 
-<tr>
-  <td>{{job.id}}</td>
-  <td class="break-word workflow-name"><a {{action "openAsWorksheet" job}}>{{job.title}}</a></td>
-  <td>{{job.status}}</td>
-  <td>{{moment-from-now job.dateSubmitted}}</td>
-  <td>{{job.duration}}</td>
-  <td><a {{action "toggleExpandJob" job.id}}>{{fa-icon "expand"}}</a></td>
-</tr>
-
-{{#if expanded}}
-  <tr>
-    <td colspan="6">{{queryFile.fileContent}}</td>
-  </tr>
-{{/if}}
+{{notification-message notification=alert}}

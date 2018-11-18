@@ -16,17 +16,25 @@
 * limitations under the License.
 }}
 
-<tr>
-  <td>{{job.id}}</td>
-  <td class="break-word workflow-name"><a {{action "openAsWorksheet" job}}>{{job.title}}</a></td>
-  <td>{{job.status}}</td>
-  <td>{{moment-from-now job.dateSubmitted}}</td>
-  <td>{{job.duration}}</td>
-  <td><a {{action "toggleExpandJob" job.id}}>{{fa-icon "expand"}}</a></td>
-</tr>
-
-{{#if expanded}}
-  <tr>
-    <td colspan="6">{{queryFile.fileContent}}</td>
-  </tr>
-{{/if}}
+<div class="row">
+  <table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+      <th>INFORMATION</th>
+      <th>VALUE</th>
+    </tr>
+    </thead>
+    {{#with table.viewInfo as |info|}}
+      <tbody>
+        <tr>
+          <th>Original Text</th>
+          <td>{{info.originalText}}</td>
+        </tr>
+        <tr>
+          <th>Extended Text</th>
+          <td>{{info.extendedText}}</td>
+        </tr>
+      </tbody>
+    {{/with}}
+  </table>
+</div>

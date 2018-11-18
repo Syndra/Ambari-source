@@ -16,17 +16,29 @@
 * limitations under the License.
 }}
 
-<tr>
-  <td>{{job.id}}</td>
-  <td class="break-word workflow-name"><a {{action "openAsWorksheet" job}}>{{job.title}}</a></td>
-  <td>{{job.status}}</td>
-  <td>{{moment-from-now job.dateSubmitted}}</td>
-  <td>{{job.duration}}</td>
-  <td><a {{action "toggleExpandJob" job.id}}>{{fa-icon "expand"}}</a></td>
-</tr>
-
-{{#if expanded}}
-  <tr>
-    <td colspan="6">{{queryFile.fileContent}}</td>
-  </tr>
-{{/if}}
+<div class="row">
+  <table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+      <th width="30%">COLUMN NAME</th>
+      <th width="20%">COLUMN TYPE</th>
+      <th width="40%">COMMENT</th>
+      <th width="10%">CLUSTERED</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each table.columns as |column|}}
+      <tr>
+        <th>{{column.name}}</th>
+        <td>{{column.type}} {{format-column-size column.precision column.scale}}</td>
+        <td>{{column.comment}}</td>
+        <td class="text-center">
+          {{#if column.isClustered}}
+            <span class="text-primary">{{fa-icon "check"}}</span>
+          {{/if}}
+        </td>
+      </tr>
+    {{/each}}
+    </tbody>
+  </table>
+</div>
