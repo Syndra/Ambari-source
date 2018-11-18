@@ -29,6 +29,7 @@ export default {
         "selectLocalFileLabel": "Select Local File",
       },
       "csvFormatParams": {
+        "selectFileFormat":"Select File Format",
         'columnDelimterField': "Field Delimiter",
         'columnDelimiterTooltip': "Delimiter for the column values. Default is comman (,).",
         'escapeCharacterField': "Escape Character",

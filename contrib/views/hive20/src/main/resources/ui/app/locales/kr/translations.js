@@ -29,6 +29,7 @@ export default {
         "selectLocalFileLabel": "로컬 파일 선택",
       },
       "csvFormatParams": {
+        "selectFileFormat":"포맷 선택",
         'columnDelimterField': "필드 구분 기호",
         'columnDelimiterTooltip': "열 값의 구분 기호로 기본값은 컴마 (,)입니다.",
         'escapeCharacterField': "이스케이프 문자",
