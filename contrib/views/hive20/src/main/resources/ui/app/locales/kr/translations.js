@@ -19,7 +19,20 @@
 export default {
   "hive": {
     "ui": {
+      "customizeText":{
+        'selectFileFormat':"파일 형식 선택",
+        'selectFileSource': "파일 선택",
+        'uploadFile':"업로드할 파일을 끌어오거나 이곳을 클릭하세요",
+        'preview':"미리보기",
+        'create':"생성",
+        'cancel':'닫기',
+        'tablePreview':"테이블 미리보기",
+        'tableName':'테이블명',
+        'nameEmpty':'테이블명은 비어있을 수 없습니다'
+
+      },
       "fileSource": {
+        
         'uploadFromLocal': "로컬에서 업로드",
         'uploadFromHdfs': "HDFS에서 업로드",
         'selectFileType': "파일 유형 선택",
@@ -29,16 +42,16 @@ export default {
         "selectLocalFileLabel": "로컬 파일 선택",
       },
       "csvFormatParams": {
-        "selectFileFormat":"포맷 선택",
+        
         'columnDelimterField': "필드 구분 기호",
-        'columnDelimiterTooltip': "열 값의 구분 기호로 기본값은 컴마 (,)입니다.",
+        'columnDelimiterTooltip': "열 값의 구분 기호로 기본값은 컴마 (,)입니다",
         'escapeCharacterField': "이스케이프 문자",
-        'escapeCharacterTooltip': "이스케이프 문자의 기본값은 백 슬래시 (\)입니다.",
-        'quoteCharacterTooltip': '인용 문자의 기본값은 큰 따옴표 (")입니다.',
+        'escapeCharacterTooltip': "이스케이프 문자의 기본값은 백 슬래시 (\)입니다",
+        'quoteCharacterTooltip': '인용 문자의 기본값은 큰 따옴표 (")입니다',
         'quoteCharacterField': "인용 문자",
         'isFirstRowHeader': "1행이 헤더입니까?",
         'fieldsTerminatedByTooltip': "HIVE 테이블의 문자로 종료된 필드",
-        'isFirstRowHeaderTooltip': "CSV 파일의 첫 번째 행이 헤더인지 확인해주세요.",
+        'isFirstRowHeaderTooltip': "CSV 파일의 첫 번째 행이 헤더인지 확인해주세요",
         'containsEndlines': "마지막 라인을 포함하시겠습니까?",
       },
       "uploadTable": {

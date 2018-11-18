@@ -23,7 +23,7 @@
       "toggleFileSource"}}>
       {{fa-icon (if showFileSourceInput "minus" "plus")}}
       </button>
-      &nbsp;&nbsp;&nbsp;Select File Source
+      &nbsp;&nbsp;&nbsp;{{t 'hive.ui.customizeText.selectFileSource'}}
     </div>
   </div>
   {{#if showFileSourceInput}}
@@ -82,7 +82,7 @@
               {{#file-picker fileLoaded="onFileChanged" preview=false}}
               <div class="text-center vert-align-middle">
                 {{fa-icon "cloud-upload" size="4"}}
-                <h4> Drag file to upload or click to browse</h4>
+                <h4>{{t 'hive.ui.customizeText.uploadFile'}}</h4>
               </div>
               {{/file-picker}}
             </div>

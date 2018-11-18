@@ -19,6 +19,17 @@
 export default {
   "hive": {
     "ui": {
+      "customizeText":{
+        'selectFileFormat':"Select File Format",
+        'selectFileSource': "Select File Source",
+        'uploadFile':"Drag file to upload or click to browse",
+        'preview':"Preview",
+        'create':"Create",
+        'cancel':'Cancel',
+        'tablePreview':"Table Preview",
+        'tableName':'name',
+        'nameEmpty':'Name cannot be empty'
+      },
       "fileSource": {
         'uploadFromLocal': "Upload from Local",
         'uploadFromHdfs': "Upload from HDFS",
@@ -29,7 +40,6 @@ export default {
         "selectLocalFileLabel": "Select Local File",
       },
       "csvFormatParams": {
-        "selectFileFormat":"Select File Format",
         'columnDelimterField': "Field Delimiter",
         'columnDelimiterTooltip': "Delimiter for the column values. Default is comman (,).",
         'escapeCharacterField': "Escape Character",
