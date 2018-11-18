@@ -38,6 +38,12 @@ let topLevelTabs = [
     faIcon: 'table'
   }),
   Ember.Object.create({
+    name: 'tables_test',
+    label: 'TABLES_TEST',
+    link: 'databases_test',
+    faIcon: 'table'
+  }),
+  Ember.Object.create({
     name: 'saves-queries',
     label: 'SAVED QUERIES',
     link: 'savedqueries',
