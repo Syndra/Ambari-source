@@ -70,10 +70,20 @@ module.exports = function(environment) {
 
   }
 
-  ENV.i18n = {
-    var savedLanguage = localStorage.getItem('language');
-    defaultLocale: savedLanguage
-  };
+  var savedLanguage = localStorage.getItem('language');
+  if(savedLanguage == 'de') {
+    ENV.i18n = {
+      defaultLocale: 'de'
+    }
+  } else if(savedLanguage == 'kr') {
+    ENV.i18n = {
+      defaultLocale: 'kr'
+    }
+  } else {
+    ENV.i18n = {
+      defaultLocale: 'en'
+    }
+  }
 
   return ENV;
 };
