@@ -20,12 +20,14 @@ import Ember from 'ember';
 import ENV from 'ui/config/environment';
 
 export default Ember.Route.extend({
-  	actions: {
+	actions: {
 	  	saveLanguage() {
 	  		console.log(ENV.i18n);
 	  		var langSelect = document.getElementById("env-language");
 	    	var selectValue = langSelect.options[langSelect.selectedIndex].value;
 	  		localStorage.setItem('language', selectValue);
+	  		this.set('i18n.locale', selectValue);
+	  		console.log(ENV.i18n);
 	  	}
   	},
 	model() {
