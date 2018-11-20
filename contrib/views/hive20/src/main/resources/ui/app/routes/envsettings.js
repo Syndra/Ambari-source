@@ -26,6 +26,6 @@ export default Ember.Route.extend({
   	currentLanguage: 'de',
 	model() {
 		console.log("addsj model ininin");
-		return languages;
+		return this.languages;
   	}
 });

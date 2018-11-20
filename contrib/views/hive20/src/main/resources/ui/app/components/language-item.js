@@ -19,10 +19,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  languages: [
-	  		{language: null, code: null},
-	  		{language: null, code: null},
-	  		{language: null, code: null}],
+  languages: [],
   currentLanguage: null,
   actions : {
     saveLanguage(language) {
