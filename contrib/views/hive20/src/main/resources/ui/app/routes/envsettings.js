@@ -19,7 +19,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-	languages() {
+	model() {
     	return ['English', 'German', 'Korean'];
   	}
 });

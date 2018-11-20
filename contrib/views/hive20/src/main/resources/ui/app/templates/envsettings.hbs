@@ -18,12 +18,10 @@
 
 <h1> Environment Settings </h1>
 
-<div class="setting-wrapper">
-    <h4>Language</h4>
-    <hr />
-    <ul>
-	    {{#each languages as |language|}}
-	    	<li>{{language}}</li>
-	    {{/each}}
-	</ul>
-</div>
+<h4>Language</h4>
+<hr />
+<ul>
+	{{#each model as |language|}}
+		<li>{{language}}</li>
+	{{/each}}
+</ul>
