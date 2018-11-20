@@ -18,7 +18,7 @@
 
 Em.I18n.translations = {
 
-  'app.name':'Ambari',
+  'app.name':'Isaac',
   'app.name.subtitle':'Ambari - {0}',
   'app.name.subtitle.experimental':'Ambari Experimental',
   'app.reloadPopup.link': 'Reload Page',
