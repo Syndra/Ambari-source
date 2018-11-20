@@ -76,7 +76,7 @@ Router.map(function() {
   });
 
   this.route('test');
-  this.route('envsettings');
+  //this.route('envsettings');
 });
 
 export default Router;
