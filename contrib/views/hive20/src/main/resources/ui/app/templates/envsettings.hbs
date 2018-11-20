@@ -23,7 +23,7 @@
     <hr />
     <select style="width: 200px">
     	{{#each model as |language|}}
-    		<option value={{language.code}}>{{language.language}}</option>
+    		<option value={{language.code}} onchange={{saveLanguage(language.code)}}>{{language.language}}</option>
     	{{/each}}
     </select>
 </div>
