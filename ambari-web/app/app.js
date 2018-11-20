@@ -23,7 +23,7 @@ require('utils/bootstrap_reopen');
 var stringUtils = require('utils/string_utils');
 
 module.exports = Em.Application.create({
-  name: 'Ambari Web',
+  name: 'ESAAC Web',
   rootElement: '#wrapper',
 
   store: DS.Store.create({
