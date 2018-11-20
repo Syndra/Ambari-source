@@ -22,15 +22,8 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   	action:{
   		saveLanguage(language) {
-  			console.log("sjdioasjois22222");
+  			console.log("saveLanguage innininininininiiininini");
   			localStorage.setItem('language', language);
 	  	}
-	},
-	model() {
-	    return [
-	  		{language: 'English', code: 'en'},
-	  		{language: 'German', code: 'de'},
-	  		{language: 'Korean', code: 'kr'}
-	  	];
-  	}
+	}
 });
