@@ -19,10 +19,12 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  	saveLanguage() {
-  		var langSelect = document.getElementById("env-language");
-    	var selectValue = langSelect.options[langSelect.selectedIndex].value;
-  		localStorage.setItem('language', selectValue);
+  	actions: {
+	  	saveLanguage() {
+	  		var langSelect = document.getElementById("env-language");
+	    	var selectValue = langSelect.options[langSelect.selectedIndex].value;
+	  		localStorage.setItem('language', selectValue);
+	  	}
   	},
 	model() {
 	    return [

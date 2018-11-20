@@ -21,7 +21,7 @@
 <div class="setting-wrapper">
     <h4>Language</h4>
     <hr />
-    <select id="env-language" style="width: 200px" onchange={{saveLanguage}}>
+    <select id="env-language" style="width: 200px" {{action "saveLanguage"}}>
     	{{#each model as |language|}}
     		<option value={{language.code}}>{{language.language}}</option>
     	{{/each}}
