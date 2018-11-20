@@ -19,7 +19,10 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-
+	saveLanguage(language) {
+		console.log("saveLanguage innininininininiiininini route");
+		localStorage.setItem('language', language);
+	}
 	model() {
 		console.log("addsj model ininin");
 	    return [
