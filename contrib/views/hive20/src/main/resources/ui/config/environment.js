@@ -70,7 +70,7 @@ module.exports = function(environment) {
 
   }
 
-  var savedLanguage = localStorage.getItem('language');
+  var savedLanguage = localStorage.getObject('language');
   if(savedLanguage == 'de') {
     ENV.i18n = {
       defaultLocale: 'de'
