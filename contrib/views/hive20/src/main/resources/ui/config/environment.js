@@ -72,9 +72,6 @@ module.exports = function(environment) {
 
   ENV.i18n = {
     var savedLanguage = localStorage.getItem('language');
-    if(savedLanguage == null) {
-      savedLanguage = 'en';
-    }
     defaultLocale: savedLanguage
   };
 
