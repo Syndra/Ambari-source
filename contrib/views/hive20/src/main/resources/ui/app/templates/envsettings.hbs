@@ -21,9 +21,9 @@
 <div class="setting-wrapper">
     <h4>Language</h4>
     <hr />
-    {{view "select"
-       content=languages
-       optionValuePath="content.code"
-       optionLabelPath="content.language"
-       value=currentLanguage.code}}
+    <select style="width: 200px">
+    	{{#each model as |language|}}
+    		<option value={{language.code}}>{{language.language}}</option>
+    	{{/each}}
+    </select>
 </div>
