@@ -43,6 +43,7 @@ let resultsTabs = [
     link: 'queries.query.tez-ui',
     faIcon: 'paper-plane'
   }),
+  Ember.Object.create({
     name: 'superset',
     label: 'SUPERSET',
     link: 'queries.query.superset',
