@@ -18,14 +18,14 @@
 
 import Ember from 'ember';
 
-export default Ember.Route.extend({
-	languages: [
-	  		{language: 'English', code: 'en'},
-	  		{language: 'German', code: 'de'},
-	  		{language: 'Korean', code: 'kr'}],
-  	currentLanguage: 'de',
-	model() {
-		console.log("addsj model ininin");
-		return {language: 'English', code: 'en'};
-  	}
+export default Ember.Component.extend({
+  languages: [
+	  		{language: null, code: null}],
+  currentLanguage: null,
+  actions : {
+    saveLanguage(language) {
+		console.log("saveLanguage innininininininiiininini language-item");
+		let selectedRow = this.get('languages');
+		console.log('lan: ' + selectedRow.language);
+  }
 });
