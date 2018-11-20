@@ -24,9 +24,9 @@ export default Ember.Controller.extend({
   ldapAuth: Ember.inject.service(),
 
   languages: [
-  	[language: 'English', code: 'en'],
-  	[language: 'German', code: 'de'],
-  	[language: 'Korean', code: 'kr']
+  	{language: 'English', code: 'en'},
+  	{language: 'German', code: 'de'},
+  	{language: 'Korean', code: 'kr'}
   ],
   currentLanguage: {
     code: 'de'
