@@ -96,6 +96,7 @@ Router.map(function() {
       this.route('visual-explain');
       this.route('tez-ui');
       this.route('loading');
+      this.route('superset');
     });
   });
 

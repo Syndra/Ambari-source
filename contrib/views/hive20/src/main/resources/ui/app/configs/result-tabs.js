@@ -42,6 +42,11 @@ let resultsTabs = [
     label: 'TEZ UI',
     link: 'queries.query.tez-ui',
     faIcon: 'paper-plane'
+  }),
+    name: 'superset',
+    label: 'SUPERSET',
+    link: 'queries.query.superset',
+    faIcon: 'paper-plane'
   })
 ];
 
