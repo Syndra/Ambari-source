@@ -22,4 +22,9 @@ export default Ember.Route.extend({
 	model() {
     	return ['English', 'German', 'Korean'];
   	}
+  	action: {
+  		saveLanguage(language) {
+  			localStorage.setItem('language', language);
+  		}
+  	}
 });

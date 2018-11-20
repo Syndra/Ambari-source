@@ -18,10 +18,12 @@
 
 <h1> Environment Settings </h1>
 
-<h4>Language</h4>
-<hr />
-<ul>
-	{{#each model as |language|}}
-		<li>{{language}}</li>
-	{{/each}}
-</ul>
+<div class="setting-wrapper">
+    <h4>Language</h4>
+    <hr />
+    <select style="width: 200px">
+    	{{#each model as |language|}}
+    		<option action "saveLanguage" language>{{language}}</option>
+    	{{/each}}
+    </select>
+</div>
