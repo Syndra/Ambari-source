@@ -114,7 +114,7 @@ export default {
         'noUDF':"UDF가 없습니다.",
         'editUDF':"UDF 수정",
         'noSavedQuery':"저장된 쿼리가 없습니다",
-        'database':"데이터베이스"
+        'database':"데이터베이스",
         'notificationMsg':"알림 메시지"
 
       },
