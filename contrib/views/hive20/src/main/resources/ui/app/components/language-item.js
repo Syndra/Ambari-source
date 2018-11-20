@@ -20,11 +20,13 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   languages: [
+	  		{language: null, code: null},
+	  		{language: null, code: null},
 	  		{language: null, code: null}],
   currentLanguage: null,
   actions : {
     saveLanguage(language) {
-		console.log("saveLanguage innininininininiiininini language-item");
+    	console.log("saveLanguage innininininininiiininini language-item");
 		let selectedRow = this.get('languages');
 		console.log("lan: " + selectedRow.language);
 	}
