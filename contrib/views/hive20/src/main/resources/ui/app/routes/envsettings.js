@@ -17,6 +17,7 @@
  */
 
 import Ember from 'ember';
+import ENV from 'ui/config/environment';
 
 export default Ember.Route.extend({
   	actions: {
@@ -24,6 +25,8 @@ export default Ember.Route.extend({
 	  		var langSelect = document.getElementById("env-language");
 	    	var selectValue = langSelect.options[langSelect.selectedIndex].value;
 	  		localStorage.setObject('language', selectValue);
+
+	  		console.log(ENV.i18n);
 	  	}
   	},
 	model() {
