@@ -16,7 +16,6 @@
  * limitations under the License.
  */
 
-import Component from '@ember/component';
 import Ember from 'ember';
 
 export default Ember.Route.extend({
