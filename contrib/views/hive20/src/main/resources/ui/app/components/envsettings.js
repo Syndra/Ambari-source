@@ -20,7 +20,6 @@ import Component from '@ember/component';
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-	console.log("sjdioasjoisasdasdsdaasddssad12111");
   	action:{
   		saveLanguage(language) {
   			console.log("sjdioasjois22222");
