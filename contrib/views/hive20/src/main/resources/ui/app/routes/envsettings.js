@@ -16,21 +16,21 @@
  * limitations under the License.
  */
 
-// import Component from '@ember/component';
-// import Ember from 'ember';
+import Component from '@ember/component';
+import Ember from 'ember';
 
-// export default Ember.Route.extend({
-//   	action:{
-//   		saveLanguage(language) {
-//   			console.log("sldjahksdahsdj");
-//   			localStorage.setItem('language', language);
-// 	  	}
-// 	},
-// 	model() {
-// 	    return [
-// 	  		{language: 'English', code: 'en'},
-// 	  		{language: 'German', code: 'de'},
-// 	  		{language: 'Korean', code: 'kr'}
-// 	  	];
-//   	}
-// });
+export default Ember.Route.extend({
+  	action:{
+  		saveLanguage(language) {
+  			console.log("sldjahksdahsdj");
+  			localStorage.setItem('language', language);
+	  	}
+	},
+	model() {
+	    return [
+	  		{language: 'English', code: 'en'},
+	  		{language: 'German', code: 'de'},
+	  		{language: 'Korean', code: 'kr'}
+	  	];
+  	}
+});
