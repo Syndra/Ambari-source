@@ -71,7 +71,7 @@ module.exports = function(environment) {
   }
 
   ENV.i18n = {
-    defaultLocale: 'kr'
+    defaultLocale: 'en'
   };
 
   return ENV;
