@@ -19,9 +19,9 @@
 <table class="table table-bordered table-hover">
   <thead>
   <tr>
-    <th width="40%">KEY</th>
-    <th width="40%">VALUE</th>
-    <th width="20%" class="text-center">ACTION</th>
+    <th width="40%">{{t 'hive.ui.customizeText.key'}}</th>
+    <th width="40%">{{t 'hive.ui.customizeText.value'}}</th>
+    <th width="20%" class="text-center">{{t 'hive.ui.customizeText.action'}}</th>
   </tr>
   </thead>
   <tbody>
@@ -34,7 +34,7 @@
   {{/each}}
   <tr class="new-settings text-center">
     <td colspan="3">
-      <a {{action "addNewRow"}}>{{fa-icon "plus"}} Add New Properties</a>
+      <a {{action "addNewRow"}}>{{fa-icon "plus"}} {{t 'hive.ui.customizeText.addProperties'}}</a>
     </td>
   </tr>
   </tbody>

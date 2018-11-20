@@ -30,17 +30,17 @@
       <div class="row query-editor-controls">
         {{#if isJobCreated}}
           {{#if isJobCancelled}}
-             <button class="btn btn-warning" disabled >{{fa-icon "ban"}} Stopping</button>
+             <button class="btn btn-warning" disabled >{{fa-icon "ban"}} {{t 'hive.ui.customizeText.stopping'}}</button>
           {{else}}
-            <button class="btn btn-warning" {{action "stopQuery" }} >{{fa-icon "ban"}} Stop</button>
+            <button class="btn btn-warning" {{action "stopQuery" }} >{{fa-icon "ban"}} {{t 'hive.ui.customizeText.stop'}}</button>
           {{/if}}
         {{else}}
-          <button class="btn btn-success" {{action "executeQuery" }} disabled={{ worksheet.isQueryRunning}} >{{fa-icon "check"}} Execute</button>
+          <button class="btn btn-success" {{action "executeQuery" }} disabled={{ worksheet.isQueryRunning}} >{{fa-icon "check"}} {{t 'hive.ui.customizeText.execute'}}</button>
         {{/if}}
 
-        <button class="btn btn-default" {{action "openWorksheetModal" }}>{{fa-icon "save"}} Save As</button>
+        <button class="btn btn-default" {{action "openWorksheetModal" }}>{{fa-icon "save"}} {{t 'hive.ui.customizeText.saveAs'}}</button>
         <div class="btn-group">
-          <button class="btn btn-default" type="button" data-toggle="dropdown" disabled={{ not allUDFList.length }}>Insert UDF
+          <button class="btn btn-default" type="button" data-toggle="dropdown" disabled={{ not allUDFList.length }}>{{t 'hive.ui.customizeText.insertUDF'}}
             <span class="caret"></span></button>
             <ul class="dropdown-menu">
               {{#each fileResourceList as |fileResource|}}
@@ -48,7 +48,7 @@
               {{/each}}
             </ul>
         </div>
-        <button class="btn btn-default" {{action "visualExplainQuery" }} disabled={{ worksheet.isQueryRunning}}>{{fa-icon "link"}} Visual Explain</button>
+        <button class="btn btn-default" {{action "visualExplainQuery" }} disabled={{ worksheet.isQueryRunning}}>{{fa-icon "link"}} {{t 'hive.ui.customizeText.visualExplain'}}</button>
 
         {{#if worksheet.isQueryRunning}}
           {{fa-icon "spinner fa-1-5 middle-align" spin=true}}
@@ -94,7 +94,7 @@
                 {{/list-group}}
               {{/list-filter}}
             {{else}}
-              <div class="empty">No Table found.</div>
+              <div class="empty">{{t 'hive.ui.customizeText.noTableFound'}}</div>
             {{/if}}
           </div>
         </div>
@@ -109,11 +109,11 @@
   {{#modal-dialog translucentOverlay=true clickOutsideToClose=true container-class="modal-dialog"}}
     <div class="modal-content">
       <div class="modal-header">
-        {{fa-icon "minus fa-lg"}} Confirm
+        {{fa-icon "minus fa-lg"}} {{t 'hive.ui.customizeText.confirm'}}
       </div>
       <div class="modal-body">
 
-        <p class="lead">{{fa-icon "save fa-lg"}} Do you want to save the worksheet?</p>
+        <p class="lead">{{fa-icon "save fa-lg"}} {{t 'hive.ui.customizeText.saveWorkSheet'}}</p>
 
         <div class="form-horizontal">
           <div class="form-group">
@@ -123,17 +123,17 @@
             </div>
           </div>
           {{#if worksheetModalSuccess }}
-            <div class="text-success">Successfully Saved.</div>
+            <div class="text-success">{{t 'hive.ui.customizeText.saveSucess'}}</div>
           {{/if}}
           {{#if worksheetModalFail }}
-            <div class="text-danger">Error</div>
+            <div class="text-danger">{{t 'hive.ui.customizeText.error'}}</div>
           {{/if}}
         </div>
       </div>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" {{action "closeWorksheetModal"}}>{{fa-icon "close"}} Reject</button>
-        <button type="button" class="btn btn-success" disabled={{not worksheetTitle}} {{action "saveWorksheetModal"}}>{{fa-icon "check"}} Save</button>
+        <button type="button" class="btn btn-default" {{action "closeWorksheetModal"}}>{{fa-icon "close"}} {{t 'hive.ui.customizeText.reject'}}</button>
+        <button type="button" class="btn btn-success" disabled={{not worksheetTitle}} {{action "saveWorksheetModal"}}>{{fa-icon "check"}} {{t 'hive.ui.customizeText.save'}}</button>
       </div>
     </div>
   {{/modal-dialog}}
@@ -143,7 +143,7 @@
   {{#modal-dialog translucentOverlay=true clickOutsideToClose=true container-class="modal-dialog  modal-sm"}}
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title">Renaming worksheet</h4>
+        <h4 class="modal-title">{{t 'hive.ui.customizeText.rename WorkSheet'}}</h4>
       </div>
       <div class="modal-body">
         <div class="form-horizontal">
@@ -154,17 +154,17 @@
             </div>
           </div>
           {{#if renameWorksheetModalSuccess }}
-            <div class="text-success">Renamed successfully.</div>
+            <div class="text-success">{{t 'hive.ui.customizeText.renameSuccess'}}</div>
           {{/if}}
           {{#if renameWorksheetModalFail }}
-            <div class="text-danger">Error while renaming.</div>
+            <div class="text-danger">{{t 'hive.ui.customizeText.renameError'}}</div>
           {{/if}}
         </div>
       </div>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" disabled={{not worksheetTitle}} {{action "renameWorksheetModal"}}>{{fa-icon "check"}} Save</button>
-        <button type="button" class="btn btn-default" {{action "closeRenameWorksheetModal"}}>{{fa-icon "close"}}Cancel
+        <button type="button" class="btn btn-default" disabled={{not worksheetTitle}} {{action "renameWorksheetModal"}}>{{fa-icon "check"}} {{t 'hive.ui.customizeText.save'}}</button>
+        <button type="button" class="btn btn-default" {{action "closeRenameWorksheetModal"}}>{{fa-icon "close"}} {{t 'hive.ui.customizeText.cancel'}}
         </button>
       </div>
     </div>

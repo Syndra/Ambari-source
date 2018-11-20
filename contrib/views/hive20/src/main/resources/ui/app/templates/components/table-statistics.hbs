@@ -27,7 +27,7 @@
 
         <label>
           {{input type="checkbox" checked=analyseWithStatistics}}
-        </label>&nbsp;<span>INCLUDE COLUMNS</span>
+        </label>&nbsp;<span>{{t 'hive.ui.customizeText.includeCol'}}</span>
       </div>
     </p>
 
@@ -37,34 +37,34 @@
   {{#if tableStatisticsEnabled}}
     {{#if (not basicStatsAccurate) }}
       <div class="alert alert-warning">
-        <p> Table statistics might be stale. Please consider recomputing statistics.
+        <p> {{t 'hive.ui.customizeText.tableStatStale'}}
         </p>
       </div>
     {{/if}}
     <div class="stats-section">
-      <p class="table-title"><strong>TABLE STATISTICS</strong></p>
+      <p class="table-title"><strong>{{t 'hive.ui.customizeText.tableStatistics'}}</strong></p>
       <table class="table table-bordered table-hover">
         <thead>
         <tr>
-          <td width="50%">STATS NAME</td>
-          <td width="50%">VALUE</td>
+          <td width="50%">{{t 'hive.ui.customizeText.statsName'}}</td>
+          <td width="50%">{{t 'hive.ui.customizeText.value'}}</td>
         </tr>
         </thead>
         <tbody>
         <tr>
-          <td>Number of Files</td>
+          <td>{{t 'hive.ui.customizeText.numOfFiles'}}</td>
           <td>{{tableStats.numFiles}}</td>
         </tr>
         <tr>
-          <td>Number of Rows</td>
+          <td>{{t 'hive.ui.customizeText.numOfFiles'}}</td>
           <td>{{tableStats.numRows}}</td>
         </tr>
         <tr>
-          <td>Raw Data Size</td>
+          <td>{{t 'hive.ui.customizeText.rawDataSize'}}</td>
           <td>{{tableStats.rawDataSize}}</td>
         </tr>
         <tr>
-          <td>Total Size</td>
+          <td>{{t 'hive.ui.customizeText.totalSize'}}</td>
           <td>{{tableStats.totalSize}}</td>
         </tr>
         </tbody>
@@ -72,19 +72,19 @@
     </div>
   {{else}}
     <div class="alert alert-danger">
-      <p>Table statistics are not computed</p>
+      <p>{{t 'hive.ui.customizeText.tableNotComputed'}}</p>
     </div>
   {{/if}}
 
 </div>
 
 <div class="row stats-section">
-  <p class="table-title"><strong>COLUMNS STATISTICS</strong></p>
+  <p class="table-title"><strong>{{t 'hive.ui.customizeText.colStat'}}</strong></p>
   <table class="table table-bordered table-hover">
     <thead>
     <tr>
-      <td width="50%">COLUMN NAME</td>
-      <td width="50%">STATISTICS</td>
+      <td width="50%">{{t 'hive.ui.customizeText.columnName'}}</td>
+      <td width="50%">{{t 'hive.ui.customizeText.statistics'}}</td>
     </tr>
     </thead>
     <tbody>
@@ -123,8 +123,8 @@
                 <table class="table table-bordered table-hover ">
                   <thead>
                   <tr>
-                    <td width="50%">KEY</td>
-                    <td width="50%">VALUE</td>
+                    <td width="50%">{{t 'hive.ui.customizeText.key'}}</td>
+                    <td width="50%">{{t 'hive.ui.customizeText.value'}}</td>
                   </tr>
                   </thead>
                   <tbody>
@@ -157,7 +157,7 @@
       </div>
       <div class="modal-body text-center">
         <div class="alert alert-danger">
-          Analyse table statistics operation may take long time
+          {{t 'hive.ui.customizeText.analyseLongTime'}}
         </div>
         <p><strong>{{analyseMessage}}</strong></p>
       </div>
