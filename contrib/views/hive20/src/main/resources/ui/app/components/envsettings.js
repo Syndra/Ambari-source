@@ -22,7 +22,6 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   	action:{
   		saveLanguage(language) {
-  			console.log("sldjahksdahsdj");
   			localStorage.setItem('language', language);
 	  	}
 	},
