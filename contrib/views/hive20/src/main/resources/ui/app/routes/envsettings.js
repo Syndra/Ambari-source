@@ -16,12 +16,15 @@
  * limitations under the License.
  */
 
+import Component from '@ember/component';
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  	saveLanguage(language) {
+  	action:{
+  		saveLanguage(language) {
   			localStorage.setItem('language', language);
-  	},
+	  	}
+	},
 	model() {
 	    return [
 	  		{language: 'English', code: 'en'},
