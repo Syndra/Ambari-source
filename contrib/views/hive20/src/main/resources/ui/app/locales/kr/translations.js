@@ -37,6 +37,7 @@ export default {
         'size':"크기",
         'advanced':"향상된 기능",
         'action':"액션",
+        'action2':"액션",
         'addNewCol':"새로운 열 추가하기",
         'settings':"설정",
         'transactional':"Transactional",
@@ -98,6 +99,24 @@ export default {
         'renameWorkSheet':"워크시트 이름 변경",
         'renameSuccess':"성공적으로 이름을 변경하였습니다",
         'renameError':"이름 변경 중 오류가 발생하였습니다",
+        'all':"전체",
+        'jobID':"작업 ID",
+        'status':"상태",
+        'startTime':"시작 시간",
+        'duration_s':"초당 지연",
+        'addUDF2':"Add new UDF",
+        'udfName':"UDF명",
+        'udfClassName':"UDF 클래스명",
+        'fileResource':"파일 리소스",
+        'resourceName':"리소스명",
+        'resourcePath':"리소스 경로",
+        'owner':"오너",
+        'noUDF':"UDF가 없습니다.",
+        'editUDF':"UDF 수정",
+        'noSavedQuery':"저장된 쿼리가 없습니다",
+        'database':"데이터베이스"
+        'notificationMsg':"알림 메시지"
+
       },
       "fileSource": {
         

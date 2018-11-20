@@ -38,6 +38,7 @@ export default {
         'size':"SIZE",
         'advanced':"ADVANCED",
         'action':"ACTION",
+        'action2':"Action",
         'addNewCol':"Add New Column",
         'settings':"Settings",
         'transactional':"Transactional",
@@ -99,6 +100,24 @@ export default {
         'renameWorkSheet':"Renaming worksheet",
         'renameSuccess':"Renamed successfully.",
         'renameError':"Error while renaming",
+        'all':"All",
+        'jobID':"Job ID",
+        'status':"Status",
+        'startTime':"Start time",
+        'duration_s':"Duration(in seconds)",
+        'addUDF2':"Add new UDF",
+        'udfName':"UDF Name",
+        'udfClassName':"UDF Class Name",
+        'fileResource':"File Resource",
+        'resourceName':"Resource name",
+        'resourcePath':"Resource Path",
+        'owner':"Owner",
+        'noUDF':"There is No UDF",
+        'editUDF':"Edit UDF",
+        'noSavedQuery':"There is no saved query.",
+        'database':"Database",
+        'notificationMsg':"Notification Messages"
+
 
       },
       "fileSource": {

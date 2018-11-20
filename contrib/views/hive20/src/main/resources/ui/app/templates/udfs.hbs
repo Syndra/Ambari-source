@@ -29,28 +29,28 @@
       <table class="table table-striped">
         <thead>
         <tr>
-        <th width="20%">UDF Name
+        <th width="20%">{{t 'hive.ui.customizeText.udfName'}}
           <span class="sort-icon">
             {{#if name.noSort}}<i class="fa fa-chevron-right" {{action "sort" "name:asc" "name" "desc"}}></i>{{/if}}
             {{#if name.desc}}<i class="fa fa-chevron-down" {{action "sort" "name:desc" "name" "asc"}}></i>{{/if}}
             {{#if name.asc}}<i class="fa fa-chevron-up" {{action "sort" "" "name" "noSort"}}></i>{{/if}}
           </span>
         </th>
-        <th width="20%">UDF Class Name
+        <th width="20%">{{t 'hive.ui.customizeText.udfClassName'}}
           <span class="sort-icon">
             {{#if classname.noSort}}<i class="fa fa-chevron-right" {{action "sort" "classname:asc" "classname" "desc"}}></i>{{/if}}
             {{#if classname.desc}}<i class="fa fa-chevron-down" {{action "sort" "classname:desc" "classname" "asc"}}></i>{{/if}}
             {{#if classname.asc}}<i class="fa fa-chevron-up" {{action "sort" "" "classname" "noSort"}}></i>{{/if}}
           </span>
         </th>
-        <th width="40%">Owner
+        <th width="40%">{{t 'hive.ui.customizeText.owner'}}
           <span class="sort-icon">
             {{#if owner.noSort}}<i class="fa fa-chevron-right" {{action "sort" "owner:asc" "owner" "desc"}}></i>{{/if}}
             {{#if owner.desc}}<i class="fa fa-chevron-down" {{action "sort" "owner:desc" "owner" "asc"}}></i>{{/if}}
             {{#if owner.asc}}<i class="fa fa-chevron-up" {{action "sort" "" "owner" "noSort"}}></i>{{/if}}
           </span>
         </th>
-        <th width="20%" class="center">Action</th>
+        <th width="20%" class="center">{{t 'hive.ui.customizeText.action2'}}</th>
       </tr>
       </thead>
       <tbody>
@@ -67,7 +67,7 @@
 
     {{#unless sortedUDF.length}}
       <div class="no-results">
-        <div>There is No UDF.</div>
+        <div>{{t 'hive.ui.customizeText.noUDF'}}</div>
       </div>
     {{/unless}}
 
