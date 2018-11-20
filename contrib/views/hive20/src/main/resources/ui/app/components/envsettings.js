@@ -19,7 +19,7 @@
 import Component from '@ember/component';
 import Ember from 'ember';
 
-export default Ember.Route.extend({
+export default Ember.Component.extend({
   	action:{
   		saveLanguage(language) {
   			localStorage.setItem('language', language);
