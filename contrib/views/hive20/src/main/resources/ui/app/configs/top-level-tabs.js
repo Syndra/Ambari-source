@@ -57,13 +57,13 @@ let topLevelTabs = [
   }),
   Ember.Object.create({
     name: 'test',
-    label: 'TEST',
+    label: '수행기록',
     link: 'test',
     faIcon: 'paper-plane'
   }),
   Ember.Object.create({
     name: 'envsettings',
-    label: 'ENV-SETTINGS',
+    label: '환경설정',
     link: 'envsettings',
     faIcon: 'cog'
   }),

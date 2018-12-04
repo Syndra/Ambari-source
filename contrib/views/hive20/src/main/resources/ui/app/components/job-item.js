@@ -45,6 +45,10 @@ export default Ember.Component.extend(UILoggerMixin, {
       }
 
     },
+    gotoSuperset(){
+      var win = window.open("13.125.207.27:9088/superset/welcome", '_blank');
+      win.focus();
+    },
     openAsWorksheet(savedQuery){
 
       let hasWorksheetModel = this.get('model'), self = this;
