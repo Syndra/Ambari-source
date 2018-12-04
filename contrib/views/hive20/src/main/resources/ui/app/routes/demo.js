@@ -19,10 +19,5 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-	actions: {
-		gotoSuperset(){
-     	 	var win = window.open("http://13.124.73.187:9088/superset/sqllab", '_blank');
-      		win.focus();
-    	}
-    }
+	
 });
