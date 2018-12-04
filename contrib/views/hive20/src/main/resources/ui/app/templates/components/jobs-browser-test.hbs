@@ -75,14 +75,14 @@
             {{#if status.asc}}<i class="fa fa-chevron-up" {{action "sort" "" "status" "noSort"}}></i>{{/if}}
           </span>
           </th>
-          <th width="25%">{{t 'hive.ui.customizeText.startTime'}}
+          <th width="20%">{{t 'hive.ui.customizeText.startTime'}}
           <span class="sort-icon">
             {{#if dateSubmitted.noSort}}<i class="fa fa-chevron-right" {{action "sort" "dateSubmitted" "dateSubmitted" "desc"}}></i>{{/if}}
             {{#if dateSubmitted.desc}}<i class="fa fa-chevron-down" {{action "sort" "dateSubmitted:desc" "dateSubmitted" "asc"}}></i>{{/if}}
             {{#if dateSubmitted.asc}}<i class="fa fa-chevron-up" {{action "sort" "" "dateSubmitted" "noSort"}}></i>{{/if}}
           </span>
           </th>
-          <th width="20%" >{{t 'hive.ui.customizeText.duration_s'}}
+          <th width="10%" >{{t 'hive.ui.customizeText.duration_s'}}
           <span class="sort-icon">
             {{#if duration.noSort}}<i class="fa fa-chevron-right" {{action "sort" "duration" "duration" "desc"}}></i>{{/if}}
             {{#if duration.desc}}<i class="fa fa-chevron-down" {{action "sort" "duration:desc" "duration" "asc"}}></i>{{/if}}
