@@ -76,6 +76,7 @@ Router.map(function() {
   });
 
   this.route('test');
+  this.route('demo');
   this.route('envsettings');
 });
 

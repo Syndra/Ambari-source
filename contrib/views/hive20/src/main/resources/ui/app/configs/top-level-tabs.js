@@ -56,6 +56,12 @@ let topLevelTabs = [
     faIcon: 'cog'
   }),
   Ember.Object.create({
+    name: 'demo',
+    label: '데모탭',
+    link: 'demo',
+    faIcon: 'paper-plane'
+  }),
+  Ember.Object.create({
     name: 'test',
     label: '수행기록',
     link: 'test',
