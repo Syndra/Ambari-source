@@ -23,7 +23,11 @@ import ENV from 'ui/config/environment';
 export default Ember.Route.extend({
   serviceCheck: Ember.inject.service(),
   ldapAuth: Ember.inject.service(),
-
+  i18n: Ember.inject.service(),
+  
+  afterModel: function(user) {
+    this.set('i18n.locale', user.get('locale'));
+  },
 
   init() {
     this.get('ldapAuth').on('ask-password', this.askPassword.bind(this));
