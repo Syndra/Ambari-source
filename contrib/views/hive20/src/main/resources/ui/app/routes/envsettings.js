@@ -27,7 +27,6 @@ export default Ember.Route.extend({
 	    	var selectValue = langSelect.options[langSelect.selectedIndex].value;
 	  		localStorage.setItem('language', selectValue);
 	  		ENV.i18n.defaultLocale = selectValue;
-	  		this.rerender();
 	  		console.log(ENV.i18n);
 	  	}
   	},
