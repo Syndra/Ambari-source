@@ -71,7 +71,16 @@ module.exports = function(environment) {
   }
 
   ENV.i18n = {
-    defaultLocale: 'en'
+    defaultLocale: 'en',
+    setKr() {
+      this.defaultLocale = 'kr';
+    },
+    setDe() {
+      this.defaultLocale = 'de';
+    },
+    setEn() {
+      this.defaultLocale = 'en';
+    }
   };
 
   return ENV;

@@ -26,7 +26,14 @@ export default Ember.Route.extend({
 	  		var langSelect = document.getElementById("env-language");
 	    	var selectValue = langSelect.options[langSelect.selectedIndex].value;
 	  		localStorage.setItem('language', selectValue);
-	  		ENV.i18n.defaultLocale = selectValue;
+	  		if(selectValue == 'kr') {
+	  			ENV.i18n.setKr();
+	  		} else if(selectValue == 'de') {
+	  			ENV.i18n.setDe();
+	  		} else {
+	  			ENV.i18n.setEn();
+	  		}
+	  		//ENV.i18n.defaultLocale = selectValue;
 	  		console.log(ENV.i18n);
 	  	}
   	},
